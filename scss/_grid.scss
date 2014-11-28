@@ -18,8 +18,15 @@ Grids and Columns
 .box{
 	margin-bottom: 1rem;
 	padding: 1rem;
-	h3, h4{color: $header-font-color;}
+	h3, h4{
+		color: $header-font-color;
+	}
 	color: masthead-bkg;
+	&:hover{
+		h3, h4{
+			text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.3);	
+		}
+	}
 	@media only screen and (min-width: $breakpoint-large) {
 		
 	}
@@ -75,10 +82,9 @@ Grids and Columns
 		bottom: 0;
 		transition:all 0.3s ease;
 			&:hover{
-				background: $masthead-font-color;
-				color: $masthead-bkg;
+				@include linear-gradient($masthead-font-color, $header-font-color);
+				color: $svg-dark;
 				@include box-shadow(5px 5px 10px 0px $shadow-color);
-				border: 1px solid $shadow-color;
 			}
 	}
 	

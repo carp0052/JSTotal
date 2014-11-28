@@ -411,6 +411,8 @@ Grids and Columns
   color: masthead-bkg; }
   .box h3, .box h4 {
     color: #aa888f; }
+  .box:hover h3, .box:hover h4 {
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.3); }
 
 .col-3 {
   margin-top: 1rem;
@@ -466,12 +468,16 @@ Grids and Columns
     bottom: 0;
     transition: all 0.3s ease; }
     .col-4 .btn:hover {
-      background: #F0F0F0;
-      color: #262626;
+      background-color: #aa888f;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#F0F0F0), to(#aa888f));
+      background-image: -webkit-linear-gradient(top, #F0F0F0, #aa888f);
+      background-image: -moz-linear-gradient(top, #F0F0F0, #aa888f);
+      background-image: -o-linear-gradient(top, #F0F0F0, #aa888f);
+      background-image: linear-gradient(to bottom, #F0F0F0, #aa888f);
+      color: #4A5E66;
       -moz-box-shadow: 5px 5px 10px 0px rgba(38, 38, 38, 0.5);
       -webkit-box-shadow: 5px 5px 10px 0px rgba(38, 38, 38, 0.5);
-      box-shadow: 5px 5px 10px 0px rgba(38, 38, 38, 0.5);
-      border: 1px solid rgba(38, 38, 38, 0.5); }
+      box-shadow: 5px 5px 10px 0px rgba(38, 38, 38, 0.5); }
   @media only screen and (min-width: 960px) {
     .col-4 {
       float: left;
@@ -546,6 +552,10 @@ h5 {
   font-size: 0.8rem; }
 
 p {
+  font-family: "Droid Sans", sans-serif;
+  font-size: 1rem; }
+
+button {
   font-family: "Droid Sans", sans-serif;
   font-size: 1rem; }
 

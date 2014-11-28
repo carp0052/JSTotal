@@ -72,7 +72,7 @@ Grids and Columns
 	.btn{
 		position: absolute;
 		width: 30%;
-		height: 30px;
+		min-height: 30px;
 		@include linear-gradient($svg-light, $svg-dark);
 		color: $masthead-font-color;
 		border-radius: 5px;

@@ -453,7 +453,7 @@ Grids and Columns
   .col-4 .btn {
     position: absolute;
     width: 30%;
-    height: 30px;
+    min-height: 30px;
     background-color: #4A5E66;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#B3D7E5), to(#4A5E66));
     background-image: -webkit-linear-gradient(top, #B3D7E5, #4A5E66);

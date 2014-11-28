@@ -1,0 +1,97 @@
+/******************************************************************
+
+Grids and Columns
+
+******************************************************************/
+
+.wrapper {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.focal, .row{
+	@extend .clearfix;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.box{
+	margin-bottom: 1rem;
+	padding: 1rem;
+	h3, h4{color: $header-font-color;}
+	color: masthead-bkg;
+	@media only screen and (min-width: $breakpoint-large) {
+		
+	}
+}
+
+.col-3{
+	margin-top: 1rem;
+	opacity: 0.5;
+	transition:all 0.5s ease;
+	h3{
+		margin: 2rem 0;
+	}
+		&:hover{	
+			border: 1px solid transparent;
+			border-radius: 5%;
+			@include box-shadow(0px 0px 10px 5px $shadow-color);
+			opacity: 1;
+			.iconic{
+				fill: $svg-dark;
+  				stroke: $svg-dark;	
+			}
+			.iconic-property-accent {
+				fill: $svg-light;
+  				stroke: $svg-light;
+			}
+		}
+	
+	@media only screen and (min-width: $breakpoint-large) {
+		float: left;
+		margin-bottom: 1rem;
+		min-height: 375px;		
+		@include equalSpaced(3, 3%, 100%);
+	}
+	
+}
+
+.col-4{
+	position: relative;
+	min-height: 170px;
+	opacity: 0.5;
+	transition: all 0.5s ease;
+	&:hover{opacity: 1;}
+	.btn{
+		position: absolute;
+		width: 30%;
+		height: 30px;
+		@include linear-gradient($svg-light, $svg-dark);
+		color: $masthead-font-color;
+		border-radius: 5px;
+		border: none;
+		margin-bottom: 1rem;
+		left: 35%;
+		bottom: 0;
+		transition:all 0.3s ease;
+			&:hover{
+				background: $masthead-font-color;
+				color: $masthead-bkg;
+				@include box-shadow(5px 5px 10px 0px $shadow-color);
+				border: 1px solid $shadow-color;
+			}
+	}
+	
+	@media only screen and (min-width: $breakpoint-large) {
+		float: left;
+		margin-bottom: 2rem;
+		min-height: 250px;		
+		@include equalSpaced(4, 2%, 100%);
+		
+		.btn{
+			width: 80%;
+			left: 10%;	
+		}
+	}
+}
+

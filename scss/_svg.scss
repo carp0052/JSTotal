@@ -1,0 +1,22 @@
+/******************************************************************
+
+SVG Stylin
+
+******************************************************************/
+
+.iconic{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 1rem;
+	fill: $svg-light;
+	stroke: $svg-light;
+	transition:all 0.5s ease;
+	
+
+}
+
+.iconic-property-accent {
+  fill: $svg-dark;
+  stroke: $svg-dark;
+	transition:all 0.5s ease;
+}

@@ -1,0 +1,74 @@
+/******************************************************************
+
+Defaults
+
+******************************************************************/
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body { 
+  font-size: $base-font-size;
+  font-family: $font-primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%; 
+  -ms-text-size-adjust: 100%; 
+  text-size-adjust: 100%; 
+	line-height: $base-line-height;
+}
+
+/* =Links */
+a           {  }
+a:hover     {  }
+a:focus     {  }
+a:hover, 
+a:active    {  }
+
+img     { vertical-align: middle; max-width: 100%; height: auto; }
+hr      { border-top: 1px solid #ccc; display: block; height: 1px; border: 0; margin: 1em 0; padding: 0; }
+
+h1, h2, h3, h4, h5 ,h6 {
+	font-family: $font-header;
+	letter-spacing: 0.1rem;
+	line-height: $line-height-med;
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+
+h1 { }
+h2{
+	font-size: $h2-size;
+	line-height: $line-height-lg;
+}
+h3{
+	font-size: $h3-size;
+	line-height: $line-height-med;
+}
+h4 {font-size: $h4-size; }
+
+h5 {font-size: $h5-size;}
+
+
+ul, ol, dl  { }
+p{
+	font-family: $font-primary;
+	font-size: $p-size;
+}
+
+.masthead{
+	background: $masthead-bkg;
+	color: $masthead-font-color;
+	min-height: 200px;
+	padding: 2rem;
+}
+
+
+

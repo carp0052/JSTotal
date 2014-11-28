@@ -1,0 +1,35 @@
+/******************************************************************
+
+Sticky Footer
+
+******************************************************************/
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  /* equal to footer height */ 
+  margin-bottom: -100px; 
+}
+.wrapper:after {
+  content: "";
+  display: block;
+}
+.foot, .wrapper:after {
+  height: 100px; 
+}
+
+.foot {
+	background: $masthead-bkg;
+	color: $masthead-font-color;
+	padding: 1rem;
+	text-align: center;
+}
+
+.foot p{
+	font-size: $foot-size;
+}
